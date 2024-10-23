@@ -2,17 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 3 D3 part</title>
+    <title>Iris Data D3 Plots</title>
+    <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* Optional: Add some basic styling */
+        .legend {
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Scatter plot</h1>
+    <!-- Scatter Plot Section -->
+    <h2>Scatter Plot: Petal Length vs Petal Width</h2>
     <div id="scatterplot"></div>
 
-    <h1>Solution for the box-plot</h1>
+    <!-- Boxplot Section -->
+    <h2>Side-by-side Boxplot: Petal Length by Species</h2>
     <div id="boxplot"></div>
-    
-    <script src='https://d3js.org/d3.v7.min.js'></script>
-    <script src='templete.js'></script>   
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
