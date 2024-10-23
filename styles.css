@@ -89,6 +89,11 @@ footer a:hover {
     color: #ff6f61;
 }
 
+ul, li {
+    font-size: 1.2em; /* Same size as paragraphs */
+    font-family: 'Roboto', Arial, sans-serif; /* Same font type as paragraphs */
+}
+
 /* Container for better layout */
 .container {
     display: flex;
