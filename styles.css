@@ -89,6 +89,11 @@ footer a:hover {
     color: #ff6f61;
 }
 
+nav {
+    text-align: center;  /* This will center the links inside the nav */
+    margin-top: 20px;    /* Adds space above the nav */
+}
+
 ul, li {
     font-size: 1.2em; /* Same size as paragraphs */
     font-family: 'Roboto', Arial, sans-serif; /* Same font type as paragraphs */
