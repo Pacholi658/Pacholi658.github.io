@@ -1,11 +1,67 @@
-<!-- Summary Page (summary.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head section as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Summary</title>
+    <style>
+        :root {
+            --celtics-green: #007A33;
+            --celtics-white: #FFFFFF;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--celtics-white);
+            color: var(--text-color);
+            text-align: center;
+        }
+        nav {
+            background-color: #C0C0C0; /* Celtics Silver */
+            padding: 1rem;
+        }
+        nav a {
+            color: var(--celtics-green);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header {
+            background-color: var(--celtics-green);
+            color: var(--celtics-white);
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .title-box {
+            text-align: center;
+        }
+        .visualization {
+            margin: 40px 0;
+        }
+        .visualization h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .visualization p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about-data.html">About Our Data</a>
@@ -14,6 +70,7 @@
         <a href="summary.html">Summary</a>
     </nav>
 
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="title-box">
@@ -22,17 +79,16 @@
         </div>
     </header>
 
+    <!-- Summary Section -->
     <div class="container">
         <h2>Key Findings</h2>
         <p>
-            [Summarize the most important insights from your data visualizations. 
-            Discuss what you learned from the data and the key takeaways.]
+            Overall, we analyzed 5 different static visualizations to get a thorough understand of the Celtic’s overall shot performances, by quarter, by shot type, by location, by player and by distance in order to get some insight on the drivers behind their most recent championship win. Reading through this information in tandem with our 3 interactive visualizations led to the conclusion that the Celtic’s strength comes from the sheer quantity of 3-point attempts that are being done throughout the matches, almost equal to the amount of 2 point attempts being taken while maintaining a high accuracy percentage. Looking at it through the eyes of an NBA coach, having this large amount of three pointers forces the game to become more spaced out and open, which in turn increases the opportunities for easy 2 pointers and layups, and it is this spacing that gives the celtics such a large amount of flexibility, because as was seen in the scoring efficiency analysis, on games where they don’t score that many three pointers, the amount of 2 pointers completed typically helps balance it out allowing them to be extremely strong on both point-scoring ways.
         </p>
 
         <h2>Future Work</h2>
         <p>
-            [Suggest potential future research directions, improvements, 
-            or additional analyses that could be conducted based on your current work.]
+            For the future there are multiple different visualizations that can be studied to gain a better understanding of team performances in the NBA. The first way is to compare all these statistics we have with other teams that are also performing well to see the similarities and differences, or compare the celtics with a team that is performing badly to see if there is a difference and what could be the driving factor behind the losing team’s lack of points. Another potential future analysis is to actually look at the defensive side and see just how impactful it is to a teams success, looking at things like shots blocked, rebounds and maybe possessions over the entire season. Finally another option could be to dive deep into individual player’s box plus minus, their efficiency or overall impact in the court and compare that across specific players in the same team and across the league.
         </p>
     </div>
 </body>
