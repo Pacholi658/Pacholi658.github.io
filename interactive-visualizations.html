@@ -53,8 +53,16 @@
         }
         iframe {
             width: 100%;
+            max-width: 1000px;  /* Limit max width of iframe */
             height: 600px;
             border: none;
+            display: block;
+            margin: 0 auto; /* Center the iframe */
+        }
+        .visualization p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: var(--text-color);
         }
     </style>
 </head>
@@ -82,7 +90,7 @@
             <!-- Embed the interactive chart as an iframe -->
             <iframe src="shot_chart.html" title="Shot Chart of 10 Players"></iframe>
             <p>
-                This visualization provides an interactive interface where the user can select different players on the Celtics roster and analyze where on the court that player had missed and made shots during each quarter. This allows the user to understand a variety of different factors, such as where a particular player’s hotspots and coldspots are on the court, how a players’ play-style and performance changes by quarter, and how their activity compares to other players on the team. The x-axis represents horizontal position on the court and the y-axis represents vertical position on the court. The user can toggle between made, missed, or both, and mix that with a toggled view of either first, second, third, fourth, overtime, or all quarters. This is a powerful visualization that helps us visually understand what a player is doing on the court. For example, we can select Sam Hauser as our player of interest, set the shot type button to ‘both,’ and select ‘fourth quarter.’ From this, the user would be able to see that in the fourth quarter, Sam Hauser is brought in to shoot primarily three-point shots, of which he is strongest from the left corner and the right wing, although overall his proportion of missed three-pointers is significantly greater than his proportion of made three-pointers. 
+                This visualization provides an interactive interface where the user can select different players on the Celtics roster and analyze where on the court that player had missed and made shots during each quarter...
             </p>
         </div>
 
@@ -92,7 +100,7 @@
             <!-- Embed the second interactive chart as an iframe -->
             <iframe src="ppg_shot_type.html" title="Total Points by Shot Type"></iframe>
             <p>
-                This chart visualizes the scoring efficiency of Celtics players across different shot types. The interactive filters allow you to compare performance based on shot type, distance, and success rates.
+                This chart visualizes the scoring efficiency of Celtics players across different shot types. The interactive filters allow you to compare performance based on shot type, distance, and success rates...
             </p>
         </div>
         
