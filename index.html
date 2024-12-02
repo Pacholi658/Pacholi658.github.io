@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Project Name</title>
+    <title>The Green Machine</title>
     <style>
-        /* Boston Celtics Inspired Color Palette */
         :root {
             --celtics-green: #007A33;
             --celtics-white: #FFFFFF;
@@ -19,22 +18,26 @@
             padding: 0;
             background-color: var(--celtics-white);
             color: var(--text-color);
-            text-align: center;      
-}
-
+            text-align: center;
+        }
         header {
             background-color: var(--celtics-green);
             color: var(--celtics-white);
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
         }
-
+        header h1 {
+            margin-bottom: 1rem;
+        }
+        header h2 {
+            margin-top: 1rem;
+            font-weight: normal;
+        }
         nav {
             background-color: var(--celtics-silver);
             padding: 1rem;
             text-align: center;
         }
-
         nav a {
             color: var(--celtics-green);
             text-decoration: none;
@@ -42,49 +45,19 @@
             font-weight: bold;
         }
         .container {
-            display: flex;  
-            justify-content: center;   
-            align-items: center;       
-            flex-direction: column;   
             width: 80%;
             margin: auto;
             padding: 20px;
-            text-align: center;
-            min-height: 60vh;         
-}
-
-        .title-box {
-            background-color: var(--celtics-green);
-            color: var(--celtics-white);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            text-align: center;
-            height: auto;
         }
-
-        .visualization {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .visualization img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-        }
-        
         .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-        }
-        .mySlides {
-            display: none;
+            max-width: 600px; /* Set a maximum width */
+            margin: 20px auto;
         }
         .mySlides img {
             width: 100%;
             height: auto;
+            object-fit: cover; /* Ensures images fit neatly */
+            max-height: 400px; /* Constrain image height */
         }
         .dot {
             cursor: pointer;
@@ -102,7 +75,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about-data.html">About Our Data</a>
@@ -111,38 +83,30 @@
         <a href="summary.html">Summary</a>
     </nav>
 
-<!-- Home Page (index.html) -->
-<header>
-    <div class="container">
-        <div class="title-box">
-            <h1>"The Green Machine: Using statistic visualizations to better understand the Celtic's current success in the NBA."</h1>
+    <header>
+        <div class="container">
+            <h1>"The Green Machine: Using statistic visualizations to better understand the Celtics' current success in the NBA."</h1>
+            <h2>Project Introduction</h2>
         </div>
-    </div>
-</header>
+    </header>
 
-<div class="container">
-    <div class="project-introduction">
+    <div class="container">
         <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="image1.jpg" style="width:100%">
+            <div class="mySlides">
+                <img src="image3.jpg" alt="Image 3">
             </div>
-            <div class="mySlides fade">
-                <img src="image2.jpg" style="width:100%">
+            <div class="mySlides">
+                <img src="image2.jpg" alt="Image 2">
             </div>
-            <div class="mySlides fade">
-                <img src="image3.jpg" style="width:100%">
+            <div class="mySlides">
+                <img src="image1.jpg" alt="Image 1">
             </div>
         </div>
-        <br>
         <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-
-        <h2>Project Introduction</h2>
-
-        <!-- Paragraphs remain as is -->
         <p>
             As students in Boston, we feel as though the history the Boston Celtics have accomplished this past season warranted a reason to study the effectiveness of shot locations on a court and how it can correlate to a team's success. With the Celtics' storied legacy and recent performance, understanding the nuances of basketball strategy, including zone range and action types, has become even more relevant. It is interesting to research how the different variables in basketball affect the game itself.
         </p>
@@ -150,28 +114,27 @@
             By analyzing these shot patterns and the contexts in which they are taken, we hope to uncover insights into how modern teams optimize their offense and whether certain trends can be linked to a consistent winning record.
         </p>
     </div>
-</div>
 
-<script>
-    let slideIndex = 0;
-    showSlides();
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000);
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image every 5 seconds
-    }
-</script>
+    </script>
 </body>
 </html>
