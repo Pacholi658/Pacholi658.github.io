@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <!-- Same head section as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Visualizations</title>
+    <style>
+        :root {
+            --celtics-green: #007A33;
+            --celtics-white: #FFFFFF;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--celtics-white);
+            color: var(--text-color);
+            text-align: center;
+        }
+        nav {
+            background-color: #C0C0C0; /* Celtics Silver */
+            padding: 1rem;
+        }
+        nav a {
+            color: var(--celtics-green);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header {
+            background-color: var(--celtics-green);
+            color: var(--celtics-white);
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .visualization {
+            margin: 40px 0;
+        }
+        .visualization h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about-data.html">About Our Data</a>
@@ -13,22 +68,34 @@
         <a href="summary.html">Summary</a>
     </nav>
 
+    <!-- Header -->
     <header>
         <div class="container">
-            <div class="title-box">
-                <h1>Interactive Visualizations</h1>
-            </div>
+            <h1>Interactive Visualizations</h1>
         </div>
     </header>
 
+    <!-- Visualizations Section -->
     <div class="container">
-        <p>
-            [Describe your interactive visualizations here. 
-            If you have specific interactive elements, you might need to 
-            add JavaScript or embed interactive tools.]
-        </p>
-        <!-- Add your interactive visualization content here -->
+        <!-- Visualization 1 -->
+        <div class="visualization">
+            <h2>Shot Chart of 10 Players with Most Shots</h2>
+            <!-- Embed the interactive chart as an iframe -->
+            <iframe src="shot_chart.html" title="Shot Chart of 10 Players"></iframe>
+            <p>
+                This interactive chart displays the shot locations of the 10 players with the most shots in the 2023-24 season. You can filter the data by player, shot made/missed, and quarter.
+            </p>
+        </div>
+
+        <!-- Visualization 2 -->
+        <div class="visualization">
+            <h2>Scoring Efficiency Analysis</h2>
+            <!-- Embed the second interactive chart as an iframe -->
+            <iframe src="scoring_efficiency.html" title="Scoring Efficiency"></iframe>
+            <p>
+                This chart visualizes the scoring efficiency of Celtics players across different shot types. The interactive filters allow you to compare performance based on shot type, distance, and success rates.
+            </p>
+        </div>
     </div>
 </body>
 </html>
-
