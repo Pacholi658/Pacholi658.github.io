@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head section as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Visualizations</title>
+    <style>
+        :root {
+            --celtics-green: #007A33;
+            --celtics-white: #FFFFFF;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--celtics-white);
+            color: var(--text-color);
+            text-align: center;
+        }
+        nav {
+            background-color: #C0C0C0; /* Celtics Silver */
+            padding: 1rem;
+        }
+        nav a {
+            color: var(--celtics-green);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header {
+            background-color: var(--celtics-green);
+            color: var(--celtics-white);
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .visualization {
+            margin: 40px 0;
+        }
+        .visualization h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .visualization img {
+            width: 80%; /* Responsive width */
+            max-width: 600px; /* Cap max size */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+        .visualization p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about-data.html">About Our Data</a>
@@ -13,42 +74,39 @@
         <a href="summary.html">Summary</a>
     </nav>
 
+    <!-- Header -->
     <header>
         <div class="container">
-            <div class="title-box">
-                <h1>Static Visualizations</h1>
-            </div>
+            <h1>Static Visualizations</h1>
         </div>
     </header>
 
+    <!-- Visualizations Section -->
     <div class="container">
+        <!-- Visualization 1 -->
         <div class="visualization">
-            <h2>Visualization 1 Title</h2>
-            <!-- Uncomment and replace [IMAGE_LINK] with your actual image link -->
-            <!-- <img src="[IMAGE_LINK]" alt="Visualization 1 Description"> -->
+            <h2>Shot Distribution Across the Court</h2>
+            <img src="plot.jpg" alt="Shot Distribution Visualization">
             <p>
-                [Explain the key insights and takeaways from this visualization. 
-                Describe what the visualization shows and its significance.]
+                This visualization highlights the distribution of shot attempts across different zones on the court. It reveals the Celtics' emphasis on three-point shooting, with a high concentration of attempts from beyond the arc, reflecting their modern offensive strategy.
             </p>
         </div>
 
+        <!-- Visualization 2 -->
         <div class="visualization">
-            <h2>Visualization 2 Title</h2>
-            <!-- Uncomment and replace [IMAGE_LINK] with your actual image link -->
-            <!-- <img src="[IMAGE_LINK]" alt="Visualization 2 Description"> -->
+            <h2>Scoring Efficiency by Shot Type</h2>
+            <img src="plot1.jpg" alt="Scoring Efficiency Visualization">
             <p>
-                [Describe the insights, patterns, or relationships revealed 
-                by this visualization.]
+                This graph showcases scoring efficiency based on various shot types. It emphasizes the Celtics' success in catch-and-shoot situations, which stems from their effective ball movement and ability to create open looks for their players.
             </p>
         </div>
 
+        <!-- Visualization 3 -->
         <div class="visualization">
-            <h2>Visualization 3 Title</h2>
-            <!-- Uncomment and replace [IMAGE_LINK] with your actual image link -->
-            <!-- <img src="[IMAGE_LINK]" alt="Visualization 3 Description"> -->
+            <h2>Shot Frequency and Success Rates</h2>
+            <img src="plot2.jpg" alt="Shot Frequency and Success Visualization">
             <p>
-                [Analyze the visualization and discuss its implications 
-                or interesting findings.]
+                This visualization compares shot frequency and success rates between different areas on the court. The Celtics have shifted their focus to high-efficiency areas, such as the paint and three-point line, while reducing reliance on mid-range attempts.
             </p>
         </div>
     </div>
