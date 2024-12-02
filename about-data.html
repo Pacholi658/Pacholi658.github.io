@@ -4,7 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Our Data</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --celtics-green: #007A33;
+            --celtics-white: #FFFFFF;
+            --celtics-silver: #C0C0C0;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--celtics-white);
+            color: var(--text-color);
+            text-align: center;
+        }
+        header {
+            background-color: var(--celtics-green);
+            color: var(--celtics-white);
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin-bottom: 1rem;
+        }
+        header h2 {
+            margin-top: 1rem;
+            font-weight: normal;
+        }
+        nav {
+            background-color: var(--celtics-silver);
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: var(--celtics-green);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .container h2 {
+            margin-top: 30px;
+            color: var(--celtics-green);
+        }
+        .container p, .container ul {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .container ul li {
+            margin: 10px 0;
+        }
+        .container a {
+            color: var(--celtics-green);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -16,18 +86,18 @@
         <a href="summary.html">Summary</a>
     </nav>
 
+    <!-- Header -->
     <header>
         <div class="container">
-            <div class="title-box">
-                <h1>About Our Data</h1>
-            </div>
+            <h1>About Our Data</h1>
         </div>
     </header>
 
+    <!-- Content Section -->
     <div class="container">
         <h2>Data Overview</h2>
         <p>
-            The dataset we utilized is titled **NBA Shots 2024**, sourced from Kaggle. This dataset, created by user 
+            The dataset we utilized is titled <strong>NBA Shots 2024</strong>, sourced from Kaggle. This dataset, created by user 
             <a href="https://www.kaggle.com/" target="_blank">Kaggle</a> contributor mexwell, contains NBA players' 
             regular-season shooting data spanning from the 2003-04 to the 2023-24 seasons. Each dataset provides detailed 
             information about every shot taken in a single NBA season, including:
