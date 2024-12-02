@@ -1,11 +1,13 @@
-<!-- About Our Data Page (about-data.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head section as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Data</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about-data.html">About Our Data</a>
@@ -25,20 +27,58 @@
     <div class="container">
         <h2>Data Overview</h2>
         <p>
-            [Describe your dataset here. Include information such as:]
-            - Data size (e.g., number of records, file size)
-            - Data source
-            - Key attributes and variables
-            - How and why this data was collected
+            The dataset we utilized is titled **NBA Shots 2024**, sourced from Kaggle. This dataset, created by user 
+            <a href="https://www.kaggle.com/" target="_blank">Kaggle</a> contributor mexwell, contains NBA players' 
+            regular-season shooting data spanning from the 2003-04 to the 2023-24 seasons. Each dataset provides detailed 
+            information about every shot taken in a single NBA season, including:
+        </p>
+        <ul>
+            <li>Team, player, and position</li>
+            <li>Game details</li>
+            <li>Shot-specific data such as distance, zone, and result</li>
+        </ul>
+        <p>
+            For this project, we focused specifically on the 2023-24 NBA season and filtered the data to only include 
+            the Boston Celtics. The original dataset comprises 218,701 rows and 26 columns, while the filtered Celtics 
+            data consists of 7,396 rows and 26 columns.
+        </p>
+        <p>
+            You can view the dataset directly on Kaggle here: 
+            <a href="https://www.kaggle.com/datasets/mexwell/nba-shots/data?select=NBA_2024_Shots.csv" target="_blank">
+                NBA Shots 2024
+            </a>.
         </p>
 
         <h3>References</h3>
         <ul>
             <li>
-                <a href="[LINK TO REFERENCE 1]" target="_blank">Reference 1 Title</a>
+                Hu, G., Yang, H., Xue, Y., & Dey, D. K. (2023). 
+                <i>Zero‐inflated Poisson model with clustered regression coefficients: Application to heterogeneity 
+                learning of field goal attempts of professional basketball players</i>. 
+                <a href="https://doi.org/10.1002/cjs.11684" target="_blank">
+                    The Canadian Journal of Statistics
+                </a>, 51(1), 157–172.
             </li>
             <li>
-                <a href="[LINK TO REFERENCE 2]" target="_blank">Reference 2 Title</a>
+                Gong, H. & Chen, S. (2024). 
+                <i>Estimating positional plus-minus in the NBA</i>. 
+                <a href="https://doi.org/10.1515/jqas-2022-0120" target="_blank">
+                    Journal of Quantitative Analysis in Sports
+                </a>, 20(3), 193–217.
+            </li>
+            <li>
+                Abbas, N. M. (2019, August 21). 
+                <i>NBA Data Analytics: Changing the game</i>. 
+                <a href="https://towardsdatascience.com/nba-data-analytics-changing-the-game-a9ad59d1f116" target="_blank">
+                    Medium
+                </a>.
+            </li>
+            <li>
+                Rubenstein, H. (2023, March 8). 
+                <i>By the numbers: Joe Mazzulla’s analytics spreadsheet</i>. 
+                <a href="https://www.celticsblog.com/2023/3/8/23627757/by-the-numbers-head-coach-joe-mazzullas-analytics-spreadsheet-boston-celtics-jayson-tatum" target="_blank">
+                    CelticsBlog
+                </a>.
             </li>
         </ul>
     </div>
