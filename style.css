@@ -66,16 +66,15 @@ nav a:hover {
 .slideshow-container {
     max-width: 1000px; /* Set a maximum width for the slideshow */
     margin: 0 auto; /* Center the slideshow on the page */
-    background-color: #f8f8f8; /* Optional: Set a background color for empty space */
     display: flex;
     align-items: center; /* Vertically center the images */
     justify-content: center; /* Horizontally center the images */
-    height: 500px; /* Set a consistent height for the container */
+    height: auto; /* Remove fixed height */
 }
 
 .slideshow-container img {
     max-width: 100%; /* Ensure the image scales to the container's width */
-    max-height: 100%; /* Ensure the image scales to the container's height */
+    max-height: 500px; /* Limit the height */
     object-fit: contain; /* Fit the image proportionally without cropping */
     display: block;
     margin: 0 auto;
