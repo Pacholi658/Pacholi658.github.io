@@ -36,6 +36,12 @@ header h2 {
     font-size: 1.8em; /* Adjusted subheader size */
 }
 
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+}
+
 /* Navigation styling */
 nav {
     background-color: var(--celtics-silver);
