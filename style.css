@@ -26,8 +26,10 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin: 0 auto; /* Center the title */
     font-size: 2.5em; /* Larger header text */
+    text-align: center; /* Ensures the text is centered */
+    line-height: 1.5; /* Adjust spacing */
 }
 
 header h2 {
