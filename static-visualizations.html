@@ -11,7 +11,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about-data.html">About Our Data</a>
-        <a href="static-visualizations.html">Visualizations</a>
+        <a href="visualizations.html">Visualizations</a>
         <a href="summary.html">Summary</a>
     </nav>
 
@@ -22,82 +22,80 @@
         </div>
     </header>
 
-    <!-- Visualizations Section -->
     <div class="container">
+        <!-- Group: Analyzing Celtics Shot Statistics -->
+        <h2>Analyzing Celtics Shot Statistics</h2>
+
         <!-- Visualization 1 -->
         <div class="visualization">
-            <h2>Analyzing Celtics Shot Statistics:</h2>
+            <h3>Shot Frequency by Distance</h3>
             <img src="plot.jpeg" alt="Shot Frequency Visualization">
-            <p>This first visualization is a bar graph representing the amount of missed and made shots by the Celtics as dependent on the distance from the basket. After first understanding the team’s overall shooting percentage, we next wanted to do this analysis to understand what types of shots the Celtics are taking and how effective those more specific types of shots are. On the x-axis of the graph we can see the range aka distance of the shots, and on the y-axis we can see the amount of shots. For each range, there are two bars displayed, the blue bar (false) for missed shots, and the orange bar (true) for made shots. In the visualization we can see that there are 5 different ranges, which are less than 8 feet, 8-16 feet, 16-24 feet, 24+ feet, and back-court shots. As seen in the visualization, we learned from this visualization that the most common types of shots attempted by the Celtics are shots of 24+ feet and shots of less than 8 feet, whereas the other shot ranges are much less frequently attempted. This makes sense because the Celtics are known to be a strong 3-pointer team amongst NBA analysts. Of their two most frequent shot ranges, we can see that the 24+ feet shots have a much larger proportion of missed attempts compared to made attempts, whereas the less than 8 feet shots have a significantly more effective rate where the proportion of made shots is much higher than the proportion of missed shots. We can use this insight to propose that the Celtics, although known for being a 3-point team, might need to slow down a bit on their 3-point attempts and bring some more focus to their less than 8 feet and mid-range shots. This visualization highlights the distribution of shot attempts across different zones on the court. It reveals the Celtics' emphasis on three-point shooting, with a high concentration of attempts from beyond the arc, reflecting their modern offensive strategy.
+            <p>
+                This bar graph represents the amount of missed and made shots by the Celtics as dependent on the distance from the basket. After first understanding the team’s overall shooting percentage, we next wanted to analyze what types of shots the Celtics are taking and how effective those specific types of shots are. This visualization highlights the Celtics' emphasis on three-point shooting, with a high concentration of attempts from beyond the arc, reflecting their modern offensive strategy.
             </p>
         </div>
 
-        <!-- Visualization 2 -->
+        <!-- Visualization 4 -->
         <div class="visualization">
-            <img src="plot2.jpeg" alt="Shots by Player Visualization">
+            <h3>Shot Distance Variation by Quarter</h3>
+            <img src="plot4.jpeg" alt="Shots by quarter">
             <p>
-               This visualization shows us a visual representation of the distribution of the Celtics’ missed and made shots around the different locations on the basketball court. On the x-axis we have the x-coordinate of the court and on the y-axis we have the y-coordinate of the court. At face value it contains a lot of data points and doesn’t tell us too much about which locations are effective asides from the fact that shots closest to the basket have a high-efficacy rate; however, when we filter this graph for specific players later on in an interactive visualization, it will be much more insightful to show us a player’s ‘hotspots’ and ‘coldspots.’
+                This boxplot examines the variation in shot distances across different quarters, separated by whether the shot was made or missed. The red boxplots represent missed shots, while the blue boxplots represent made shots. This visualization helps us understand how shot success is correlated with distance and game progression.
             </p>
         </div>
+
+        <!-- Group: Analyzing Player Performance -->
+        <h2>Analyzing Player Performance</h2>
 
         <!-- Visualization 3 -->
         <div class="visualization">
+            <h3>Player Shot Frequency and Success</h3>
             <img src="plot3.jpeg" alt="Shot Frequency and Success Visualization">
             <p>
-                This bar graph helps us compare the number of missed and made shots by players on the Celtic’s roster. On the x-axis are the names of various players on the Celtic’s roster, and on the y-axis is the number of shots. The purpose of this visualization was to give us insight into the Celtic’s offensive distribution strategy, helping us understand which player’s get more ball time and which get less. This can help us understand if the amount of ball time being given to a player is worth it in terms of their efficacy. From the visualization, we can see that Jayson Tatum is by far the player on the team with the most ball time, as he has the highest number of attempted shots. Of his attempted shots, we can see that he has quite a higher proportion of missed shots compared to made shots. In comparison, his runner-up in ball time, Jaylen Brown, has much less attempted shots than Jayson Tatum, but his ratio of missed-to-made shots is almost exactly equal, meaning that although he takes less shots than Tatum, Brown is much more effective with his shots. This proposes the recommendation to make an adjustment to the team’s offensive strategy: reduce some of the attention being given to Tatum and redirect it to Brown, the more efficient shot-taker. By allowing us to compare the efficacy of players in their shot-taking, this bar graph helps us make strategic recommendations towards the team’s offensive strategy. 
-            </p>
-        </div>
-
-         <!-- Visualization 4 -->
-        <div class="visualization">
-            <img src="plot4.jpeg" alt="Shots by quarter">
-            <p>
-                This visualization is a boxplot that examines the variation in shot distances across different quarters, separated by whether the shot was made or missed. On the x-axis are the quarter numbers, ranging from the first quarter to overtime, and on the y-axis is the shot distance in feet. The red boxplots represent missed shots, while the blue boxplots represent made shots. From this visualization, we observe that the shot distances vary significantly, with missed shots generally having a wider range and higher maximum distances than made shots in each quarter. Additionally, there are notable outliers in each quarter, indicating occasional extreme shot attempts from greater distances. This visualization helps us understand how shot success is correlated with distance and game progression.
+                This bar graph compares the number of missed and made shots by players on the Celtics' roster. By allowing us to compare the efficacy of players in their shot-taking, this bar graph helps us make strategic recommendations toward the team’s offensive strategy.
             </p>
         </div>
 
         <!-- Visualization 5 -->
         <div class="visualization">
+            <h3>Shot Type by Outcome</h3>
             <img src="plot5.jpeg" alt="Shot type by quarter">
             <p>
-                This heatmap visualization explores the relationship between shot type and shot outcome. The two shot types analyzed are 2-point field goals and 3-point field goals, displayed along the y-axis, while the shot outcomes—“Missed” and “Made”—are shown on the x-axis. Each cell is color-coded to represent the frequency of shots, with a gradient from blue (low frequency) to red (high frequency). For example, 2-point field goals that are made appear in the deep red region, signifying high frequency. This visualization highlights the Celtics’ shot trends, showing that missed 3-point shots are nearly as frequent as missed 2-point shots, reflecting the team’s strong reliance on long-range shooting. By emphasizing shot success rates across both types, this visualization provides a clearer picture of the team’s scoring efficiency.
+                This heatmap explores the relationship between shot type and shot outcome. The visualization provides insights into the Celtics’ reliance on long-range shooting and their scoring efficiency across different shot types.
             </p>
         </div>
 
-            <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Interactive Visualizations</h1>
-        </div>
-    </header>
+        <!-- Group: Interactive Visualizations -->
+        <h2>Interactive Visualizations</h2>
 
-    <!-- Visualizations Section -->
-    <div class="container">
         <!-- Visualization 1 -->
         <div class="visualization">
-            <!-- Embed the interactive chart as an iframe -->
+            <h3>Shot Chart of 10 Players</h3>
             <iframe src="shot_chart.html" title="Shot Chart of 10 Players"></iframe>
             <p>
-                 This visualization provides an interactive interface where the user can select different players on the Celtics roster and analyze where on the court that player had missed and made shots during each quarter. This allows the user to understand a variety of different factors, such as where a particular player’s hotspots and coldspots are on the court, how a players’ play-style and performance changes by quarter, and how their activity compares to other players on the team. The x-axis represents horizontal position on the court and the y-axis represents vertical position on the court. The user can toggle between made, missed, or both, and mix that with a toggled view of either first, second, third, fourth, overtime, or all quarters. This is a powerful visualization that helps us visually understand what a player is doing on the court. For example, we can select Sam Hauser as our player of interest, set the shot type button to ‘both,’ and select ‘fourth quarter.’ From this, the user would be able to see that in the fourth quarter, Sam Hauser is brought in to shoot primarily three-point shots, of which he is strongest from the left corner and the right wing, although overall his proportion of missed three-pointers is significantly greater than his proportion of made three-pointers. 
+                This interactive visualization provides an interface where the user can select different players on the Celtics roster and analyze where on the court that player had missed and made shots during each quarter. It helps visually understand player performance and strategy on the court.
             </p>
         </div>
 
         <!-- Visualization 2 -->
         <div class="visualization">
-            <h2>Scoring Efficiency Analysis</h2>
-            <!-- Embed the second interactive chart as an iframe -->
+            <h3>Scoring Efficiency Analysis</h3>
             <iframe src="ppg_shot_type.html" title="Total Points by Shot Type"></iframe>
             <p>
-                 This visualization is a line graph which compares the total number of points scored from 2-point shots and the total number of points scored from 3-point shots by the Celtics on the occasion of various games. We have included an interactive feature which allows the user to drag and select the timespan (range of months) for which they would like to analyze the scoring breakdown of games. On the x-axis is date (month) and on the y-axis is points. There are two lines displayed, the blue line representing the points from 2-point shots across various games, and the orange line representing the points from 3-point shots across various games. There is also a tooltip where you can click on a point on the graph on either line, and it will tell you the specific date of when the game was played, as well as the number of points accumulated from that shot type. Using this visualization, you can choose a certain time frame during the season and compare how much contribution 3-pointers had towards games versus 2-pointers. Tracking this allows us to continuously monitor and understand the efficacy of the Celtics’ shot selection strategy.
+                This line graph compares the total number of points scored from 2-point shots and 3-point shots by the Celtics over various games. It provides interactive features to analyze the scoring breakdown over a selected time range, helping us monitor the Celtics' shot selection strategy.
             </p>
         </div>
-        
-        <!-- Visualization 3: Celtics Shot Distribution -->
+
+        <!-- Visualization 3 -->
         <div class="visualization">
-            <h2>Celtics Shot Distribution</h2>
+            <h3>Celtics Shot Distribution</h3>
             <div id="player-bar-chart"></div>
+            <p>
+                This interactive bar chart shows the distribution of shots taken by Celtics players across different zones on the court. It allows users to explore player-specific shot patterns and performance trends.
+            </p>
         </div>
     </div>
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="main.js" defer></script>
 </body>
