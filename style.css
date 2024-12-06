@@ -83,19 +83,15 @@ nav a:hover {
 
 .visualization {
     margin: 40px auto;
-    text-align: center; /* Centers the content */
+    text-align: center; /* Centers the visualization content */
     max-width: 1200px; /* Limits the maximum width */
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    min-height: 700px; /* Ensures enough height to center content */
 }
 
 .visualization img, .visualization iframe {
     width: 100%; /* Full width within the container */
-    max-width: 1200px; /* Allow a slightly larger maximum width */
-    height: 800px; /* Increase the height for better visibility */
-    object-fit: contain; /* Ensures the content fits within the frame */
+    max-width: 1000px; /* Cap max size */
+    height: 700px; /* Set a consistent height */
+    object-fit: contain; /* Ensures the image fits within the frame */
     border: none;
     display: block;
     margin: 0 auto;
