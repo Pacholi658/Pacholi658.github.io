@@ -1,0 +1,95 @@
+:root {
+    --celtics-green: #007A33;
+    --celtics-white: #FFFFFF;
+    --celtics-silver: #C0C0C0;
+    --text-color: #333;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Increased font size */
+    line-height: 1.8; /* Better readability */
+    margin: 0;
+    padding: 0;
+    background-color: var(--celtics-white);
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: var(--celtics-green);
+    color: var(--celtics-white);
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger header text */
+}
+
+header h2 {
+    margin-top: 1rem;
+    font-weight: normal;
+    font-size: 1.8em; /* Adjusted subheader size */
+}
+
+/* Navigation styling */
+nav {
+    background-color: var(--celtics-silver);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: var(--celtics-green);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Visualization and images */
+.visualization {
+    margin: 40px 0;
+}
+
+.visualization img, iframe {
+    width: 80%; /* Responsive width */
+    max-width: 1000px; /* Cap max size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Lists for variables */
+ul {
+    list-style-type: disc;
+    margin: 20px;
+    padding-left: 40px;
+    font-size: 1.1em;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify; /* Align text for better readability */
+}
