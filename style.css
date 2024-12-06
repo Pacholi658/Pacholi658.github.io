@@ -63,6 +63,19 @@ nav a:hover {
     text-align: left;
 }
 
+.slideshow-container {
+    max-width: 1000px; /* Set a maximum width for the slideshow */
+    margin: 0 auto; /* Center the slideshow on the page */
+}
+
+.slideshow-container img {
+    width: 100%; /* Make all images the same width */
+    height: 500px; /* Set a consistent height */
+    object-fit: cover; /* Crop images proportionally to fill the height */
+    display: block;
+    margin: 0 auto;
+}
+
 .visualization {
     margin: 40px auto;
     text-align: center; /* Centers the visualization content */
