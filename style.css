@@ -31,11 +31,10 @@ header h1 {
 }
 
 header h2 {
-    margin-top: 1rem;
+    margin-top: 20px; /* Reduced top margin for better spacing */
     font-weight: normal;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 2em;
+    font-size: 1.8em; /* Adjusted size for consistency */
+    text-align: center; /* Center-align the header (if not already applied globally) */
 }
 
 /* Navigation styling */
