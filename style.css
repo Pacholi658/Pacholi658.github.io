@@ -86,12 +86,21 @@ nav a:hover {
     max-width: 1200px; /* Limits the maximum width */
 }
 
-.visualization img, .visualization iframe {
+.visualization img {
     width: 100%; /* Full width within the container */
     max-width: 1000px; /* Cap max size */
-    height: 700px; /* Set a consistent height */
-    object-fit: contain; /* Ensures the image fits within the frame */
+    height: auto; /* Let the height adjust proportionally */
+    object-fit: contain; /* Ensures the image fits without cropping */
     border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.visualization iframe {
+    width: 100%; /* Full width within the container */
+    max-width: 1000px; /* Cap max size */
+    height: 800px; /* Increase the height for better proportions */
+    border: none; /* Remove iframe border */
     display: block;
     margin: 0 auto;
 }
